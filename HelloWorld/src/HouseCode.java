@@ -1,9 +1,8 @@
 import java.util.Scanner;
 public class HouseCode {
 
-	public static void main(String[] args) 
-	{
-		Scanner in = new Scanner(System.in);
+	public static void main(String[] args) {
+
 		//these are the variables
 		int length = 0;
 		int width =0;
@@ -17,6 +16,7 @@ public class HouseCode {
 		double CostPerSqFt =0;
 		
 		//these are the inputs
+		Scanner in = new Scanner(System.in);
 		System.out.println("Input length of house: ");
 		length = in.nextInt();
 		System.out.println("Input width of house: ");
