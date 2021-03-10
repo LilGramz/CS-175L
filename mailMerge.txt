@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class mailMerge {
+
+	public static void main(String[] args) {
+		
+		//Variables
+		String EnterFname;
+		String EnterLname;
+		String HouseNum;
+		String StreetNum;
+		String AdressCheck;
+		String adressCheck = ("n");
+		String promptText1 = "Please enter your first name: ";
+		String promptText2 = "Please enter your last name: ";
+		String promptText3 = "Please enter your house number: ";
+		String promptText4 = "Please enter your street: ";
+		String promptText5 = "Is this address correct? ";
+
+		
+		// input
+		Scanner in = new Scanner(System.in);
+		System.out.println(promptText1);
+		EnterFname = in.nextLine();
+		System.out.println( promptText2 );
+		EnterLname = in.nextLine();
+		System.out.println(promptText3);
+		HouseNum = in.nextLine();
+		System.out.println(promptText4 );
+		StreetNum = in.nextLine();
+		System.out.println(promptText5);
+		AdressCheck = in.nextLine();
+		
+		//Double Check
+		System.out.println("Dear "+EnterFname+ " " +EnterLname);
+		System.out.println("Please confirm that your address is "+HouseNum +StreetNum);
+		System.out.println("Your answer is: "+AdressCheck+"OR"+adressCheck );
+		AdressCheck = in.nextLine();
+		System.out.println("Goodbye" );
+		in.close();
+		
+	}
+
+}
